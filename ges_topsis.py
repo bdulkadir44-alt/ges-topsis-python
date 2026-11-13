@@ -133,7 +133,7 @@ makale_V = np.array([
     [21.0803, 1.3842, 2.9051, 7.3852],
 ])
 makale_Apoz = np.array([21.9235, 6.9208, 4.3576, 9.8470])        # Tablo 3
-makale_Aneg = np.array([21.0803, 1.3842, 2.9052, 7.3852])        # Tablo 3 (basıldığı gibi)
+makale_Aneg = np.array([21.0803, 1.3842, 2.9051, 7.3852])        # Tablo 3 (basıldığı gibi)
 makale_Spoz = np.array([0.0000, 2.9249, 3.9972, 4.2966, 5.5469, 4.8691, 6.2877])  # Formül 9
 makale_Sneg = np.array([6.2877, 3.8332, 3.1675, 2.9262, 1.0032, 2.6330, 0.0000])  # Formül 10
 makale_C = np.array([1.000, 0.567, 0.442, 0.405, 0.153, 0.351, 0.000])            # Şekil 1
@@ -168,7 +168,6 @@ print("\nDOĞRULAMA (makale değerleri ile karşılaştırma):")
 for ad, tamam in kontroller.items():
     print(f"  {ad:<22}: {'UYUMLU' if tamam else 'FARKLI'}")
 
-# Tablo 3'teki A- üçüncü sütun notu: makalede 2,9052 basılmış, ancak V matrisindeki
 # (Formül 4) karşılığı 2,9051'dir; hesaplanan değer aşağıda gösterilir.
 print(f"\nNot: A- (3. sütun) hesaplanan = {a_neg[2]:.5f}; "
       f"makalede Tablo 3'te {makale_Aneg[2]:.4f}, Formül 4'te {makale_V[3, 2]:.4f}.")
